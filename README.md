@@ -1,2 +1,2 @@
-# ncae-cyber-games
+# NCAE-cyber-games
 Resources for NCAE Cyber Games
