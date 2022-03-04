@@ -12,8 +12,10 @@ Lines = f.readlines()
 for line in Lines:
   user, password = line.split()
   cmdUser = 'useradd ' + user
+  ''' needs fixing
   cmdPasswd = 'passwd ' + user
   cmdEchoPasswd = 'echo ' + password
+  '''
   os.system(cmdUsr)
   os.system(cmdPasswd)
   time.sleep(.5)
