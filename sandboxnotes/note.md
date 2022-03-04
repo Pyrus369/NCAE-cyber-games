@@ -28,3 +28,14 @@ sudo firewall-cmd --zone=external --permanent --add-forward-port=port=80:proto=t
 firewall-cmd --reload
 firewarll-cmd --list-all --zone=external
 ```
+
+# Create Multiple Users in Linux
+- create 'names.txt'
+- user1:user1password:userID:groupID:comment:homeDIR:shell
+- example:
+- ***tcole:password123!:1002:1002::/home/tcole:/bin/bash***
+- change permission on file
+- sudo chmod 0600 names.txt
+- sudo newusers names.txt
+- verify /etc/passwd
+
