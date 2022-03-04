@@ -32,8 +32,10 @@ firewarll-cmd --list-all --zone=external
 # Create Multiple Users in Linux
 - create 'names.txt'
 - user1:user1password:userID:groupID:comment:homeDIR:shell
+- user2:user2password:userID:groupID:comment:homeDIR:shell
 - example:
 - ***tcole:password123!:1002:1002::/home/tcole:/bin/bash***
+- ***sfilly:!321drowssap:1003:1003::/home/sfilly:/bin/bash***
 - change permission on file
 ```bash
 sudo chmod 0600 names.txt
