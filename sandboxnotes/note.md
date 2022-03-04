@@ -35,7 +35,9 @@ firewarll-cmd --list-all --zone=external
 - example:
 - ***tcole:password123!:1002:1002::/home/tcole:/bin/bash***
 - change permission on file
-- sudo chmod 0600 names.txt
-- sudo newusers names.txt
+```bash
+sudo chmod 0600 names.txt
+sudo newusers names.txt
+```
 - verify /etc/passwd
 
