@@ -4,22 +4,17 @@ csvFile = open('quotes.csv', 'r')
 
 Lines = csvFile.readlines()
 
+userFirstName = {'user1FirstName':'/home/user1/quotes/', 'user2FirstName':'/home/user2/quotes/'} # Add all users first name in lowercase
+
 for line in Lines:
     quote, aurthor, topic = line.split(';')
-    if aurthor.split()[0].lower == 'user1firstname':
-        f1 = open('/home/user1/quotes/smile.txt', 'at')
-        f2 = open('/home/user1/quotes/topics.txt', 'at')
+    if aurthor.split()[0].lower in userFirstName.keys():
+        directory1 = userFirstName.get(aurthor.split()[0].lower()) + 'smile.txt'
+        directory2 = userFirstName.get(aurthor.split()[0].lower()) + 'topics.txt'
+        f1 = open(directory1, 'at')
+        f2 = open(directory2, 'at')
         f1.write(line)
         f2.write(topic)
         f2.write('\n')
-    elif aurthor.split()[0].lower() == 'user2firstname':
-        f1 = open('/home/user2/quotes/smile.txt', 'at')
-        f2 = open('/home/user2/quotes/topics.txt', 'at')
-        f1.write(line)
-        f2.write(topic)
-        f2.write('\n')
-    '''
-        Continue creating elif statements until all users are accounted for.
-    '''
     else:
         continue
