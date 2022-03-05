@@ -1,3 +1,5 @@
+# CURRENTLY BEING TESTED
+
 csvFile = open('quotes.csv', 'r')
 
 Lines = csvFile.readlines()
