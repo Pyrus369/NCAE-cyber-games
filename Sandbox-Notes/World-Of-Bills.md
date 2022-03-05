@@ -97,6 +97,11 @@ sudo vi /etc/passwd
  # Activity 5
  ### TODO
  
+ # Activity 6
+ ### TODO
+ 
+ # Activity 7
+ ### TODO
  
  
 
