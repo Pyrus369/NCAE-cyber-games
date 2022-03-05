@@ -18,8 +18,8 @@ for line in Lines:
         f1.write(line)
         f2.write(topic)
         f2.write('\n')
- '''
- Continue creating elif statements until all users are accounted for.
- '''
+    '''
+        Continue creating elif statements until all users are accounted for.
+    '''
     else:
         continue
